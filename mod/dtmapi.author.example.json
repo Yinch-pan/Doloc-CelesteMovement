@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 4,
+  "projectKind": "CodeMod",
+  "codeModKind": "Advanced",
+  "targetDtmApiVersion": "0.7.0",
+  "projectFile": "Yinch.CelesteMovement.csproj",
+  "publish": {
+    "tags": [
+      "Mod",
+      "DTMAPI"
+    ],
+    "localizedName": {
+      "schinese": "[DTMAPI] 蔚蓝运动 / Celeste Movement（测试版）",
+      "english": "[DTMAPI] Celeste Movement (Beta)"
+    },
+    "localizedDescription": {
+      "schinese": "让多洛可主角用蔚蓝式动作探索小镇\n蔚蓝运动将主角的跑跳、冲刺与攀爬改为受 Celeste 启发的运动方式，同时保留多洛可主角及当前换装。按住跳跃跳得更高，松开快速收跳；抓住墙面攀爬，再接一次蹬墙跳。\n\n版本：0.2.10 测试版｜作者：Yinch｜前置：DTMAPI Runtime 0.7.0\n已测试环境：Windows、游戏 1.00.09、键盘操作。\n\n主要功能\n\n• 可变跳高、离地宽限、跳跃缓冲、快速下落与八方向冲刺。\n• 抓墙、上下攀爬、蹬墙跳和攀爬体力；体力不足时红闪提醒。\n• 蹲伏、蹲姿冲刺，以及单向平台上的“下＋跳”下穿。\n• 支持 super、hyper、extended hyper、wavedash 和 wallbounce 等动作。\n• 蹲伏与攀爬使用原角色贴图驱动动画，保留衣服、头发和帽子。\n• 正常移动固定使用蔚蓝运动；菜单、过场、骑乘等交还原版控制。\n\n\n能力跟随游戏流程解锁\n未获得能力：不能冲刺。\n获得原版“二段跳”：解锁一次蔚蓝冲刺。\n获得原版“冲刺”：解锁两次蔚蓝冲刺。\n\n已有存档会自动对应；原版冲刺标记优先，两项均解锁时为两次。普通冲刺与蹲姿冲刺共用次数，落地按恢复时序补满。不保留空中二段跳。\n抓墙、攀爬和蹬墙跳从开局可用，可能改变原版探索顺序。原版剧情与教程中的能力名称尚未替换。\n\n用发色判断剩余次数\n充满或未解锁时：保留角色原本发色，默认外观为黑发。\n一次冲刺能力：原发色 → 用完后蓝色。\n两次冲刺能力：原发色 → 用一次后红色 → 用完后蓝色。\n补充次数时短暂闪白，补满后恢复原发色。低攀爬体力的身体/帽子红闪是独立提示。\n\n默认键位\n\n• 移动 / 冲刺方向：WASD 或方向键。\n• 跳跃 / 普通冲刺：沿用游戏内设置。\n• 抓墙：左 Ctrl；按住后配合上 / 下攀爬。\n• 蹲伏 / 快速下落：S 或 ↓。\n• 蹲姿冲刺：C。\n• 下穿单向平台：按住下，再按跳跃。\n\n改键入口：标题左上角 DTMAPI → 配置 → 蔚蓝运动，修改后保存。\n关闭“跳跃 / 冲刺沿用游戏键位”后，可设置独立按键，默认 Space / 左 Shift。\n默认空间比例为 0.50，可在同一配置页调整。\n\n安装与启用\n1. 安装 DTMAPI Runtime 0.7.0，并按前置说明完成安装和状态检查。\n2. 订阅本 Mod，等待 Steam 下载完成。\n3. 启动游戏，在标题菜单“模组”中启用本 Mod，然后完整退出并重新启动游戏。\n4. 建议先复制存档进行体验。\n\nDTMAPI 前置与安装说明：https://steamcommunity.com/sharedfiles/filedetails/?id=3743016467\n只订阅 DTMAPI 不代表已经完成运行前置安装；以其页面和安装包说明为准。\n\n兼容性与测试范围\n\n• 本版本主要面向键盘；手柄、Steam Deck、Linux/macOS 尚未验证。\n• 建议不要同时启用其他接管主角移动、跳跃、冲刺或碰撞的 Mod。\n• 普通换装已做适配；整体角色替换、特殊遮罩或异形外观可能无法显示独立头发变色与部分动作效果。\n• 复杂地形、移动物体挤压、受伤和工具切换等仍可能出现边缘问题。\n\n这是仍在完善的测试版，不代表所有场景都与 Celeste 逐帧一致；不添加梦境块、羽毛、泡泡等 Celeste 专用机关。\n\n反馈问题\n请提供 Mod / 游戏 / DTMAPI 版本、出问题的地点、触发步骤、是否切过地图或交互，以及同时启用的其他 Mod。能附短视频会更容易复现。需要日志时，可提供游戏目录 BepInEx/LogOutput.log 中与问题有关的片段。\n\n致谢与说明\n感谢 Celeste 带来的动作设计灵感，以及 DTMAPI 为多洛可功能 Mod 提供的运行支持。\n本项目为玩家制作的非官方 Mod，与两款游戏的开发团队没有官方合作关系。\n封面采用 Celeste 官方 Steam 商店截图，用于说明动作灵感来源，并非本 Mod 实机画面。截图版权归原权利方所有。安装包不包含两款游戏本体或平台运行库。图片来源：https://store.steampowered.com/app/504230/Celeste/\n",
+      "english": "Celeste-inspired character movement for Doloc Town. Version 0.2.10 beta by Yinch.\n\nVariable jumps, eight-direction dashes, wall grabbing and climbing stamina, crouching, down+jump through one-way platforms, and advanced movement techniques. Preserves the native character and outfits.\n\nProgression: the native double-jump unlock grants one dash; the native dash unlock grants two. No mid-air double jump. Both dash buttons share charges; landing refills them. Climbing and wall jumps are available from the start.\n\nHair: full or locked = native color; one remaining out of two = red; empty = blue. Brief white refill flash and separate low-stamina red warning.\n\nKeyboard: WASD/arrows; game jump/dash bindings; Left Ctrl to grab; C to crouch-dash; down to crouch; down+jump to drop through platforms. Rebind through title-screen DTMAPI > Configuration > Celeste Movement. Default spatial scale: 0.50.\n\nRequires separately installed DTMAPI Runtime 0.7.0. Subscribe, enable in the game's Mods menu, then fully restart. Use one installation source only. Copy your save before testing.\n\nTested on Windows, game 1.00.09, keyboard. Controllers, other platforms, complex moving geometry and all custom appearances are not fully verified. Avoid combining with other movement/collision overrides. Native tutorial text still names the original abilities. This is not a claim of full frame-for-frame parity with Celeste.\n\nUnofficial fan mod. Cover: an official Celeste Steam store screenshot, illustrating the movement inspiration, not footage of this mod. Image rights belong to their respective owners. No game or platform runtime binaries are bundled. Image source: https://store.steampowered.com/app/504230/Celeste/\nDTMAPI: https://steamcommunity.com/sharedfiles/filedetails/?id=3743016467"
+    }
+  },
+  "nativeReferences": {
+    "gameRoot": "",
+    "references": [
+      "DolocTown_Data/Managed/Assembly-CSharp.dll",
+      "DolocTown_Data/Managed/UnityEngine.CoreModule.dll",
+      "DolocTown_Data/Managed/UnityEngine.AnimationModule.dll",
+      "DolocTown_Data/Managed/UnityEngine.Physics2DModule.dll",
+      "DolocTown_Data/Managed/AK.Wwise.Unity.API.dll",
+      "BepInEx/core/0Harmony.dll"
+    ],
+    "harmonyOwner": "Yinch.CelesteMovement.Native",
+    "requiredMembers": [
+      {
+        "assemblyIdentity": "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "declaringType": "DolocTown.BodyController",
+        "kind": "method",
+        "name": "Update",
+        "isStatic": false,
+        "returnType": "[bcl]System.Void",
+        "parameterTypes": []
+      },
+      {
+        "assemblyIdentity": "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "declaringType": "DolocTown.BodyController",
+        "kind": "method",
+        "name": "FixedUpdate",
+        "isStatic": false,
+        "returnType": "[bcl]System.Void",
+        "parameterTypes": []
+      },
+      {
+        "assemblyIdentity": "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "declaringType": "DolocTown.BodyController",
+        "kind": "method",
+        "name": "OnDisable",
+        "isStatic": false,
+        "returnType": "[bcl]System.Void",
+        "parameterTypes": []
+      },
+      {
+        "assemblyIdentity": "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "declaringType": "DolocTown.BodyController",
+        "kind": "method",
+        "name": "get_IsInAirState",
+        "isStatic": false,
+        "returnType": "[bcl]System.Boolean",
+        "parameterTypes": []
+      },
+      {
+        "assemblyIdentity": "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "declaringType": "DolocTown.BodyController",
+        "kind": "method",
+        "name": "get_IsDash",
+        "isStatic": false,
+        "returnType": "[bcl]System.Boolean",
+        "parameterTypes": []
+      },
+      {
+        "assemblyIdentity": "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "declaringType": "DolocTown.BodyController",
+        "kind": "method",
+        "name": "JumpDown",
+        "isStatic": false,
+        "returnType": "[bcl]System.Boolean",
+        "parameterTypes": []
+      },
+      {
+        "assemblyIdentity": "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "declaringType": "DolocTown.BodyController",
+        "kind": "method",
+        "name": "SetRoom",
+        "isStatic": false,
+        "returnType": "[bcl]System.Void",
+        "parameterTypes": [
+          "[Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]DolocTown.Room",
+          "[bcl]System.Boolean"
+        ]
+      },
+      {
+        "assemblyIdentity": "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "declaringType": "DolocTown.AgentControllerState",
+        "kind": "method",
+        "name": "AgentMotion",
+        "isStatic": false,
+        "returnType": "[bcl]System.Boolean",
+        "parameterTypes": []
+      },
+      {
+        "assemblyIdentity": "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "declaringType": "DolocTown.AgentControllerState",
+        "kind": "field",
+        "name": "body",
+        "isStatic": false,
+        "returnType": "[Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]DolocTown.BodyController",
+        "parameterTypes": []
+      },
+      {
+        "assemblyIdentity": "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "declaringType": "DolocTown.BodyController",
+        "kind": "method",
+        "name": "set_Pause",
+        "isStatic": false,
+        "returnType": "[bcl]System.Void",
+        "parameterTypes": [
+          "[bcl]System.Boolean"
+        ]
+      },
+      {
+        "assemblyIdentity": "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "declaringType": "DolocTown.BodyController",
+        "kind": "method",
+        "name": "get_Velocity",
+        "isStatic": false,
+        "returnType": "[UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]UnityEngine.Vector2",
+        "parameterTypes": []
+      },
+      {
+        "assemblyIdentity": "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "declaringType": "DolocTown.BodyController",
+        "kind": "method",
+        "name": "set_InCutscene",
+        "isStatic": false,
+        "returnType": "[bcl]System.Void",
+        "parameterTypes": [
+          "[bcl]System.Boolean"
+        ]
+      }
+    ]
+  }
+}

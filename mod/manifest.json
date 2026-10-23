@@ -1,0 +1,16 @@
+{
+  "Name": "Celeste Movement",
+  "Author": "Yinch",
+  "Version": "0.2.10",
+  "Description": "Celeste-inspired movement for Doloc Town: variable jumps, climbing, crouch and progression-based one/two dashes. Preserves outfits. Keyboard beta; requires DTMAPI Runtime 0.7.0.",
+  "UniqueID": "Yinch.CelesteMovement",
+  "EntryDll": "Yinch.CelesteMovement.dll",
+  "EntryType": "Yinch.CelesteMovement.ModEntry",
+  "MinimumDTMApiVersion": "0.7.0",
+  "Type": "CodeMod",
+  "CodeModKind": "Advanced",
+  "Dependencies": [],
+  "UpdateKeys": [],
+  "NativeContractVersion": 1,
+  "DependencyContractVersion": 1
+}

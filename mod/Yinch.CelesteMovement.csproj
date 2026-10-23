@@ -1,0 +1,24 @@
+<Project>
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+  <Import Project="$(DTMAPI_AUTHOR_SDK_ROOT)/build/DTMAPI.Author.props" />
+  <PropertyGroup>
+    <AssemblyName>Yinch.CelesteMovement</AssemblyName>
+    <RootNamespace>Yinch.CelesteMovement</RootNamespace>
+    <Version>0.2.10</Version>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../src/CelesteMovement.Core/MovementMotor.cs" Link="Core/MovementMotor.cs" />
+    <Compile Include="../src/CelesteMovement.Core/PixelPlayer.cs" Link="Core/PixelPlayer.cs" />
+    <Compile Include="../src/CelesteMovement.Core/KeyboardAxis.cs" Link="Core/KeyboardAxis.cs" />
+    <Compile Include="../src/CelesteMovement.Core/AnimationMotion.cs" Link="Core/AnimationMotion.cs" />
+    <Compile Include="../src/CelesteMovement.Core/StatusFeedback.cs" Link="Core/StatusFeedback.cs" />
+    <Compile Include="../src/CelesteMovement.Core/WorldReadinessGate.cs" Link="Core/WorldReadinessGate.cs" />
+    <None Remove="content/**/*" />
+    <Content Include="content/**/*" DtmApiPackagePath="Content/DTMAPI/%(RecursiveDir)%(Filename)%(Extension)" />
+    <Content Include="publishing/preview.png" DtmApiPackagePath="preview.png" Condition="Exists('publishing/preview.png')" />
+    <Content Include="publishing/icon.png" DtmApiPackagePath="icon.png" Condition="Exists('publishing/icon.png')" />
+  </ItemGroup>
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+  <Import Project="$(DTMAPI_AUTHOR_SDK_ROOT)/build/DTMAPI.Author.targets" />
+</Project>

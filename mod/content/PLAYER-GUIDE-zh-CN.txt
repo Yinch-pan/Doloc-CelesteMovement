@@ -1,0 +1,55 @@
+蔚蓝运动 / Celeste Movement 0.2.10 测试版
+作者：Yinch
+Mod ID：Yinch.CelesteMovement
+已验证环境：Windows，Doloc Town 1.00.09，DTMAPI Runtime 0.7.0，键盘。
+
+一、先安装运行前置
+DTMAPI：https://steamcommunity.com/sharedfiles/filedetails/?id=3743016467
+按该条目和下载包内说明完成安装，再运行其状态检查。
+玩家不需要安装 Author SDK、.NET SDK、开发源码或 Celeste。
+
+二、选择一种安装来源
+工坊版：订阅本 Mod，等待下载；在游戏标题“模组”中启用并完整重启游戏。
+
+手动版：
+1. 退出游戏。
+2. 将 Yinch.CelesteMovement-0.2.10.zip 解压至：
+   %USERPROFILE%\AppData\LocalLow\RedSawGames\DolocTown\MODS\Yinch.CelesteMovement
+3. 确认该目录下直接有 info.json、Content 文件夹、dtmapi-dependencies.json、
+   dtmapi-native-build.json、preview.png 和 icon.png，避免多套一层目录。
+4. 启动游戏，在标题“模组”中启用“蔚蓝运动 / Celeste Movement”，完整重启。
+不要把这个包或 DLL 放进 BepInEx/plugins；不要同时启用本地版和工坊版。
+更新旧手动版时，先将旧 Mod 文件夹备份到 MODS 目录之外，再解压新包。
+DTMAPI/config 中的个人键位配置保留，不在本包中分发。
+
+三、默认操作
+移动：WASD / 方向键。
+跳跃与普通冲刺：沿用游戏键位；按住跳跃跳得更高，松开较早收跳。
+抓墙：左 Ctrl；抓墙时用上 / 下攀爬。
+蹲伏 / 快落：S / ↓。单向平台下穿：下＋跳跃。
+蹲姿冲刺：C，与普通冲刺共享次数。
+改键：标题左上角 DTMAPI → 配置 → 蔚蓝运动 → 修改后保存。
+如需独立跳跃和冲刺键，关闭“跳跃 / 冲刺沿用游戏键位”，默认 Space / 左 Shift。
+空间比例默认 0.50，可在配置中调整。
+
+四、进度与颜色
+未解锁：0 次冲刺。
+原版二段跳：解锁 1 次蔚蓝冲刺。
+原版冲刺：解锁 2 次蔚蓝冲刺，此标记优先。
+不保留空中二段跳；落地按既有恢复时序补满。
+抓墙、攀爬、蹬墙跳开局可用。原版教程文字仍可能显示原能力名称。
+未解锁 / 满次数：角色原发色。
+双冲剩一次：红发。次数耗尽：蓝发。恢复次数时：短暂白闪。
+低攀爬体力：身体/帽子间歇红闪。
+
+五、测试范围与卸载
+建议先复制存档体验；移动方式变化可能影响关卡通过顺序。
+避免同时启用其他主角移动 / 碰撞 Mod。
+手柄、非 Windows 平台、复杂挤压地形、所有换装组合尚未完整验证。
+停用：在游戏标题“模组”中禁用后完整重启。模组只读取原版解锁标记，
+不改写这些标记；停用后按原版逻辑使用原存档能力。
+
+六、反馈
+说明版本、地点、触发步骤、其他 Mod 和是否发生过切图 / 椅子等交互。
+日志在游戏目录 BepInEx/LogOutput.log，可提交相关错误片段。
+不要将个人存档、账号凭据或整套游戏文件放进工坊发布包。
